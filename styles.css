@@ -4,17 +4,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #4b4b4b, #9e9e9e);
+    background-color: #121212;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
     overflow: hidden;
-    animation: gradientAnimation 5s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% { background: #4b4b4b; }
-    50% { background: #7a7a7a; }
-    100% { background: #4b4b4b; }
 }
 
 .container {
@@ -24,21 +17,29 @@ body {
     height: 100%;
 }
 
+#ball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #00bcd4;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.8), 0 0 30px rgba(0, 188, 212, 0.6);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
 #scoreboard {
     position: absolute;
-    top: 20px;
+    bottom: 30px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 24px;
 }
 
-#ball {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #00bcd4;
-    cursor: pointer;
-    transition: transform 0.1s ease;
+#score, #highscore {
+    margin: 0 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
 }
