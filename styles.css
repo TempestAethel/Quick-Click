@@ -17,13 +17,29 @@ body {
     height: 100%;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 1), 0 0 20px rgba(0, 188, 212, 0.7);
+}
+
+p {
+    font-size: 1.5em;
+    margin: 5px 0 30px;
+    color: #b0b0b0;
+}
+
 #ball {
     position: absolute;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #00bcd4;
-    box-shadow: 0 0 20px rgba(0, 188, 212, 0.8), 0 0 30px rgba(0, 188, 212, 0.6);
+    box-shadow: 0 0 20px rgba(0, 188, 212, 1), 0 0 30px rgba(0, 188, 212, 0.6);
     cursor: pointer;
     transition: transform 0.1s ease;
 }
@@ -35,11 +51,21 @@ body {
     display: flex;
     justify-content: center;
     font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #score, #highscore {
-    margin: 0 15px;
+    margin: 0 20px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
+    background-color: rgba(0, 188, 212, 0.2);
+    color: #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+    transition: background-color 0.3s;
+}
+
+#score:hover, #highscore:hover {
+    background-color: rgba(0, 188, 212, 0.4);
 }
