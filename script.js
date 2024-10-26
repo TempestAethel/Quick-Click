@@ -15,8 +15,9 @@ function updateScore() {
 }
 
 function randomPosition() {
-    const x = Math.random() * (window.innerWidth - ball.clientWidth);
-    const y = Math.random() * (window.innerHeight - ball.clientHeight);
+    const ballSize = ball.clientWidth;
+    const x = Math.random() * (window.innerWidth - ballSize - 40) + 20; // Ensure half the ball is visible
+    const y = Math.random() * (window.innerHeight - ballSize);
     ball.style.transform = `translate(${x}px, ${y}px)`;
 }
 
