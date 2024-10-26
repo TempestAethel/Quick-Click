@@ -52,23 +52,22 @@ p {
     transform: translateX(-50%); /* Adjust for centering */
     display: flex;
     justify-content: center;
+    align-items: center; /* Vertically center the items */
     font-size: 24px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px; /* Add rounded corners */
-    padding: 10px 20px; /* Add padding for spacing */
+    padding: 10px; /* Use uniform padding */
     box-shadow: 0 0 10px rgba(0, 188, 212, 0.6); /* Optional: add shadow */
 }
 
-}
-
 #score, #highscore {
-    margin: 0 20px;
-    padding: 10px;
+    padding: 10px 15px; /* Add padding to create space around text */
     border-radius: 5px;
     background-color: rgba(0, 188, 212, 0.2);
     color: #00bcd4;
     box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
     transition: background-color 0.3s;
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
 #score:hover, #highscore:hover {
